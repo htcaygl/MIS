@@ -1,0 +1,17 @@
+/Users/haticeaygul/IdeaProjects/MIS/src/test/java/com/mis/utilities/UsefulMethods.java
+/Users/haticeaygul/IdeaProjects/MIS/src/test/java/com/mis/pages/TransactionPage.java
+/Users/haticeaygul/IdeaProjects/MIS/src/test/java/com/mis/step_definitions/TransactionStepDefs.java
+/Users/haticeaygul/IdeaProjects/MIS/src/test/java/com/mis/pages/BasePage.java
+/Users/haticeaygul/IdeaProjects/MIS/src/test/java/com/mis/utilities/ConfigurationReader.java
+/Users/haticeaygul/IdeaProjects/MIS/src/test/java/com/mis/runners/CukesRunner.java
+/Users/haticeaygul/IdeaProjects/MIS/src/test/java/com/mis/pages/LoginPage.java
+/Users/haticeaygul/IdeaProjects/MIS/src/test/java/com/mis/utilities/BrowserUtils.java
+/Users/haticeaygul/IdeaProjects/MIS/src/test/java/com/mis/step_definitions/Hooks.java
+/Users/haticeaygul/IdeaProjects/MIS/src/test/java/com/mis/pages/DashboardPage.java
+/Users/haticeaygul/IdeaProjects/MIS/src/test/java/com/mis/step_definitions/RegisterStepDefs.java
+/Users/haticeaygul/IdeaProjects/MIS/src/test/java/com/mis/step_definitions/CheckoutStepDefs.java
+/Users/haticeaygul/IdeaProjects/MIS/src/test/java/com/mis/pages/RegisterPage.java
+/Users/haticeaygul/IdeaProjects/MIS/src/test/java/com/mis/step_definitions/LoginStepDefs.java
+/Users/haticeaygul/IdeaProjects/MIS/src/test/java/com/mis/step_definitions/DashboardStepDefs.java
+/Users/haticeaygul/IdeaProjects/MIS/src/test/java/com/mis/utilities/Driver.java
+/Users/haticeaygul/IdeaProjects/MIS/src/test/java/com/mis/pages/CheckoutPage.java
