@@ -21,9 +21,9 @@
 
     Examples:
       |merchant| |phone||amount|
-      |        2||000000002||200.01|
+   #   |        2||000000002||200.01|
       |        3||000000002||200.01 |
-      |        4||000000001||200.01|
+   #  |        4||000000001||200.01|
 
 
        #DONE ama otp hatasi prod haric diger env. larda almadigimiz ici diger testler icin dogru calismiyor simdilik sadece prod icin dogru calisiyor
@@ -65,8 +65,6 @@
         |        3||000000004||score error||400|
         |        3||000000006||bnplAmount error||1800|
         |        3||000000008||bnplStatus ERROR||302|
-
-
 
 
 

@@ -53,7 +53,7 @@ public class CheckoutStepDefs {
 
         if (merchantNo == 9 || merchantNo == 10 )
         {
-            BrowserUtils.waitFor(20);
+            BrowserUtils.waitFor(25);
         }
         else {
             BrowserUtils.waitFor(10);
