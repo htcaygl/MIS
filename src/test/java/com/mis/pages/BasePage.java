@@ -59,7 +59,7 @@ public class BasePage {
     public WebElement dashboardBtn;
 
     @FindBy(xpath = "//p[text()='Purchases']")
-    public WebElement transactionBtn;
+    public WebElement purchasesBtn;
 
     @FindBy(xpath = "//p[text()='Payment Plan']")
     public WebElement paymentPlanBtn;
@@ -78,9 +78,9 @@ public class BasePage {
                 dashboardBtn.click();
                 BrowserUtils.waitFor(2);
                 break;
-            case "Transactions":
-                BrowserUtils.waitForClickablility(transactionBtn,2);
-                transactionBtn.click();
+            case "Purchases":
+                BrowserUtils.waitForClickablility(purchasesBtn,2);
+                purchasesBtn.click();
                 BrowserUtils.waitFor(2);
                 break;
             case "Payment Plan":
@@ -106,7 +106,8 @@ public class BasePage {
                 BrowserUtils.waitFor(2);
                 break;
             case "continue":
-                BrowserUtils.waitForClickablility(continueBtn,30);
+                BrowserUtils.waitFor(7);
+                BrowserUtils.waitForClickablility(continueBtn,50);
                 continueBtn.click();
                 BrowserUtils.waitFor(2);
                 break;

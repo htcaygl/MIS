@@ -12,7 +12,7 @@ public class TransactionStepDefs {
     public void userTapTab(String arg0) {
 
         TransactionPage transactionPage = new TransactionPage();
-        transactionPage.topMenu("Transactions");
+        transactionPage.topMenu("Purchases");
 
     }
 
