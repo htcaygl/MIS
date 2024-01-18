@@ -88,9 +88,9 @@ public class LoginStepDefs {
 
         if(otp.equals("valid"))
             { loginPage.otp.sendKeys("111111");
-              BrowserUtils.waitForClickablility(loginPage.submitBtn, 8);
+              BrowserUtils.waitForClickablility(loginPage.submitBtn, 15);
               loginPage.submitBtn.click();
-              BrowserUtils.waitFor(3);
+              BrowserUtils.waitFor(5);
             }
 
         else { // otp.equals("invalid")

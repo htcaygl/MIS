@@ -9,10 +9,10 @@ import org.junit.Assert;
 public class TransactionStepDefs {
 
     @And("user tap {string} tab")
-    public void userTapTab(String arg0) {
+    public void userTapTab(String btn) {
 
         TransactionPage transactionPage = new TransactionPage();
-        transactionPage.topMenu("Purchases");
+        transactionPage.topMenu(btn);
 
     }
 
@@ -22,8 +22,8 @@ public class TransactionStepDefs {
         TransactionPage transactionPage = new TransactionPage();
 
         Assert.assertEquals("Trendyol", transactionPage.table("merchant").getText());
-        Assert.assertEquals("23/11/2023 14:10", transactionPage.table("date").getText());
-        Assert.assertEquals("SAR 201.00", transactionPage.table("amount").getText());
+        Assert.assertEquals("18/01/2024 19:13", transactionPage.table("date").getText());
+        Assert.assertEquals("SAR 200.01", transactionPage.table("amount").getText());
 
     }
 }

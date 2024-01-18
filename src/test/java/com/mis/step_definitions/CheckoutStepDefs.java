@@ -118,6 +118,46 @@ public class CheckoutStepDefs {
 
     }
 
+    @And("user enter card information {int}")
+    public void userEnterCardInfo(int merchantNo) {
+
+
+        //merchantNo = 3 test env
+        if(merchantNo == 3) {
+
+            CheckoutPage checkoutPage = new CheckoutPage();
+
+            BrowserUtils.waitFor(2);
+
+            BrowserUtils.waitForClickablility(checkoutPage.creditCardInput, 10);
+
+            checkoutPage.creditCardInput.click();
+
+            checkoutPage.creditCardInput.sendKeys(ConfigurationReader.get("creditCardNumber"));
+
+            checkoutPage.creditCardMonth.sendKeys(ConfigurationReader.get("creditCardMonth"));
+
+            checkoutPage.creditCardYear.sendKeys(ConfigurationReader.get("creditCardYear"));
+
+            checkoutPage.creditCardCvv.sendKeys(ConfigurationReader.get("creditCardCvv"));
+
+            checkoutPage.bankPagePayBtn.click();
+
+            BrowserUtils.waitForClickablility(checkoutPage.creditCardOtp, 10);
+
+            checkoutPage.creditCardOtp.sendKeys(ConfigurationReader.get("creditCardOtp"));
+
+            checkoutPage.bankPageSubmitBtn.click();
+        }
+
+        BrowserUtils.waitFor(2);
+
+
+        //TODO
+        //  Assert.assertTrue(Driver.get().getCurrentUrl().contains("https://[securepayments.alrajhibank.com.sa/pg/paymentpage"));
+
+    }
+
 
     @Then("user should see {string} error and click close button on Checkout Page")
     public void userShouldSeeError(String error) {

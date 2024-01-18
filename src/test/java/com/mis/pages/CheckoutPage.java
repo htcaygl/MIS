@@ -63,9 +63,6 @@ public class CheckoutPage extends BasePage{
     @FindBy(xpath = "//input[@value='Pay']")
     public WebElement bankPagePayBtn;
 
-    @FindBy(xpath = "//input[@value='Cancel']")
-    public WebElement bankPageCancelBtn;
-
     @FindBy(xpath = "//input[@id='otp']")
     public WebElement creditCardOtp;
 
@@ -136,34 +133,34 @@ public class CheckoutPage extends BasePage{
 
                 BrowserUtils.waitForClickablility(goToPaymentBtn, 5);
 
-                if(merchantNo == 0) //dev env.
+                if(merchantNo == 2) //dev env.
                 {
                     goToPaymentBtn.click();
                 }
-                //merchantNo = 1 test env
+                //merchantNo = 3 test env
                 else {
 
                     goToPaymentBtn.click();
-
-                    BrowserUtils.waitForClickablility(creditCardInput, 10);
-
-                    creditCardInput.click();
-
-                    creditCardInput.sendKeys(ConfigurationReader.get("creditCardNumber"));
-
-                    creditCardMonth.sendKeys(ConfigurationReader.get("creditCardMonth"));
-
-                    creditCardYear.sendKeys(ConfigurationReader.get("creditCardYear"));
-
-                    creditCardCvv.sendKeys(ConfigurationReader.get("creditCardCvv"));
-
-                    bankPagePayBtn.click();
-
-                    BrowserUtils.waitForClickablility(creditCardOtp, 10);
-
-                    creditCardOtp.sendKeys(ConfigurationReader.get("creditCardOtp"));
-
-                    bankPageSubmitBtn.click();
+// TODOOOO
+//                    BrowserUtils.waitForClickablility(creditCardInput, 10);
+//
+//                    creditCardInput.click();
+//
+//                    creditCardInput.sendKeys(ConfigurationReader.get("creditCardNumber"));
+//
+//                    creditCardMonth.sendKeys(ConfigurationReader.get("creditCardMonth"));
+//
+//                    creditCardYear.sendKeys(ConfigurationReader.get("creditCardYear"));
+//
+//                    creditCardCvv.sendKeys(ConfigurationReader.get("creditCardCvv"));
+//
+//                    bankPagePayBtn.click();
+//
+//                    BrowserUtils.waitForClickablility(creditCardOtp, 10);
+//
+//                    creditCardOtp.sendKeys(ConfigurationReader.get("creditCardOtp"));
+//
+//                    bankPageSubmitBtn.click();
 
                 }
 

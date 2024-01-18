@@ -16,13 +16,15 @@
       And user enter "valid" Otp
       And user tap "continue" button
       And user tap "goToPayment" button for <merchant> on Checkout Page
+      And user enter card information <merchant>
   #    And user tap "goToHome" button for <merchant> on Checkout Page
       Then the user is on the checkout page
 
     Examples:
       |merchant| |phone||amount|
-   #   |        2||000000002||200.01|
-      |        3||000000002||200.01 |
+      |        2||000000002||200.01|
+   #   |        3||000000002||200.01 |
+      |        3||000000003||300.01 |
    #  |        4||000000001||200.01|
 
 

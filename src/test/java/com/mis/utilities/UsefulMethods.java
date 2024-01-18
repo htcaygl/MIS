@@ -32,4 +32,20 @@ public class UsefulMethods {
     }
 
 
+        public static double SplitAmount(String amountText) {
+
+           // String amountText = "SAR&nbsp;2,665.00";
+
+            // Remove non-numeric characters (including currency symbol and non-breaking space)
+            String numericPart = amountText.replaceAll("[^0-9]", "");
+
+            // Parse the numeric part as an integer
+            double amountValue = Double.parseDouble(numericPart);
+
+            return amountValue ;
+
+        }
+
+
+
 }

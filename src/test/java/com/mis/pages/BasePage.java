@@ -1,6 +1,7 @@
 package com.mis.pages;
 
 import com.mis.utilities.BrowserUtils;
+import com.mis.utilities.UsefulMethods;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -70,6 +71,7 @@ public class BasePage {
     //Marketing page
     @FindBy(xpath = "//button[text()='Go to Console']")
     public WebElement marketingPageGoToConsoleBtn;
+
 
     public void topMenu(String btn) {
         switch (btn) {
