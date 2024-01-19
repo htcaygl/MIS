@@ -51,7 +51,7 @@ public class CheckoutStepDefs {
         checkoutPage.checkoutBtn.click();
 
 
-        if (merchantNo == 9 || merchantNo == 10 )
+        if (merchantNo == 11 || merchantNo == 12 )
         {
             BrowserUtils.waitFor(25);
         }
